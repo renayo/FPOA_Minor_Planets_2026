@@ -1,0 +1,7 @@
+# Netlify deploy config. Publishes the self-contained site/ folder.
+# The page reads site/summary.json (a copy of results/summary.json) at load,
+# with an inline fallback baked in at build time, so it renders even from a
+# bare static host with no fetch.
+[build]
+  publish = "site"
+  command = ""

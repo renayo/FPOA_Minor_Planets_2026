@@ -1,0 +1,101 @@
+{
+  "dataset": {
+    "named_bodies_verified": 1122,
+    "days": 290,
+    "date_start": "2022-02-15",
+    "date_end": "2022-12-01"
+  },
+  "aspects": [
+    30,
+    36,
+    40,
+    45,
+    60,
+    72,
+    90,
+    120,
+    180
+  ],
+  "signal": {
+    "joint_acf_sq": 0.4481,
+    "h1_variance_fraction": 0.299,
+    "acf_vs_single_cosine_r": 0.979,
+    "axis_deg": 178.4,
+    "acf_at_lag": {
+      "30": 0.3259,
+      "36": 0.2693,
+      "40": 0.1987,
+      "45": 0.1305,
+      "60": 0.1658,
+      "72": 0.1472,
+      "90": -0.0175,
+      "120": -0.1747,
+      "180": -0.3646
+    }
+  },
+  "nulls": {
+    "compound": {
+      "mean": 0.0872,
+      "ratio": 5.14,
+      "p": 0.005664778407197601
+    },
+    "unnamed_mba": {
+      "mean": 0.1066,
+      "ratio": 4.2,
+      "p": 0.014995001666111295
+    },
+    "n_mc": 3000,
+    "seed": 42
+  },
+  "robustness": {
+    "bodies_removed": [
+      0,
+      25,
+      50,
+      100,
+      150,
+      200,
+      300,
+      400
+    ],
+    "top_coverage_drop": [
+      0.4481,
+      0.4064,
+      0.3881,
+      0.3087,
+      0.2023,
+      0.0546,
+      0.022,
+      0.0414
+    ],
+    "random_drop_mean": [
+      0.4481,
+      0.405,
+      0.4193,
+      0.3582,
+      0.3811,
+      0.3322,
+      0.2955,
+      0.2189
+    ],
+    "random_drop_sd": [
+      0.0,
+      0.081,
+      0.0957,
+      0.0869,
+      0.17,
+      0.1218,
+      0.1923,
+      0.1586
+    ],
+    "coverage_burstiness_spearman": 0.951
+  },
+  "sidereal": {
+    "ayanamsha": 24.13,
+    "axis_trop": 178.4,
+    "dist_to_tropical_axis": 1.6,
+    "dist_to_sidereal_axis": 25.7,
+    "BF_fixed_tropical": 20.8,
+    "BF_fixed_sidereal": 14.4
+  }
+}
